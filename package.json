@@ -1,14 +1,13 @@
 {
-  "name": "generator-ng-component",
-  "version": "0.1.1",
-  "description": "Yeoman generator",
-  "license": "MIT",
+  "name": "generator-ng-koz",
+  "version": "0.0.1",
+  "description": "Yeoman generator forked from generator-ng-component",
   "main": "app/index.js",
-  "repository": "DaftMonk/generator-ng-component",
+  "repository": "kkozee/generator-ng-koz",
   "author": {
-    "name": "Tyler Henkel",
+    "name": "Kevin Kozee",
     "email": "",
-    "url": "https://github.com/DaftMonk"
+    "url": "https://github.com/kkozee"
   },
   "engines": {
     "node": ">=0.10.0"

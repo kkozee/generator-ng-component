@@ -1,16 +1,16 @@
-'use strict';
+(() => {
+  'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .factory('<%= cameledName %>', function () {
-    // Service logic
-    // ...
+  class <%= classedName %>Factory {
+    constructor() {
 
-    var meaningOfLife = 42;
+    }
 
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
-  });
+    <%= cameledName %>Factory() {
+      return new <%= classedName %>Factory();
+    }
+  }
+
+  angular.module('<%= scriptAppName %>')
+    .factory('<%= cameledName %>Factory', <%= classedName %>Factory.<%= cameledName %>Factory())
+})();
