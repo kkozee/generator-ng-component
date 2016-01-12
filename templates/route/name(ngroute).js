@@ -1,10 +1,12 @@
-'use strict';
+(() => {
+  'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('<%= route %>', {
-        templateUrl: '<%= htmlUrl %>',
-        controller: '<%= classedName %>Ctrl'
-      });
-  });
+  angular.module('<%= scriptAppName %>')
+    .config($routeProvider => {
+      $routeProvider
+        .when('<%= route %>', {
+          templateUrl: '<%= htmlUrl %>',
+          controller: '<%= classedName %>Ctrl'
+        });
+    });
+})();

@@ -1,6 +1,16 @@
-'use strict';
+(() => {
+  'use strict';
 
-angular.module('<%= scriptAppName %>')
-  .service('<%= cameledName %>', function () {
-    // AngularJS will instantiate a singleton by calling "new" on this function
-  });
+  class <%= classedName %>Service {
+    constructor() {
+
+    }
+
+    <%= cameledName %>Service() {
+      return new <%= classedName %>Service();
+    }
+  }
+
+  angular.module('<%= scriptAppName %>')
+    .Service('<%= cameledName %>Service', <%= classedName %>Service.<%= cameledName %>Service())
+})();
